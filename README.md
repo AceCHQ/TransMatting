@@ -5,6 +5,13 @@ Official project page of TransMatting (ECCV2022)
 ><h3><strong><i>🚀 News</i></strong></h3>
 The extended paper [TransMatting: Tri-token Equipped Transformer Model for Image Matting](https://arxiv.org/pdf/2303.06476.pdf) is published on arXiv. We further propose TransMattingV2, which extends tri-token to both convolutional networks and Transformer. Various experiments demonstrate that it could boost both Transformer and convolutional networks, indicating that the proposed tri-token has the potential to be a new paradigm for image matting.
 
+## Results
+
+Quantitative Results on Composition-1k
+| Model      | SAD   | MSE | Grad | Conn  | Results |
+| ---------- | ----- | --- | ---- | ----- | ----------- |
+| TransMattingV1 | 24.96 | 4.58 | 9.72 | 20.16 |[GoogleDrive](https://drive.google.com/drive/folders/1ippCr0rxvh6v4OFXRPWgP4ANojylhn_6)|
+
 
 # Transparent-460
 Our dataset Transparent-460 is now open to the public. If you want to use it for research rather than commercial activity, please follow the following step to get the dataset. 
