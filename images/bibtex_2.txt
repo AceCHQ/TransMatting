@@ -1,0 +1,6 @@
+@article{cai2023transmatting,
+  title={TransMatting: Tri-token Equipped Transformer Model for Image Matting},
+  author={Cai, Huanqia and Xue, Fanglei and Xu, Lele and Guo, Lili},
+  journal={arXiv preprint arXiv:2303.06476},
+  year={2023}
+}

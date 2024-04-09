@@ -1,0 +1,8 @@
+@inproceedings{cai2022transmatting,
+  title={Transmatting: Enhancing transparent objects matting with transformers},
+  author={Cai, Huanqia and Xue, Fanglei and Xu, Lele and Guo, Lili},
+  booktitle={European Conference on Computer Vision},
+  pages={253--269},
+  year={2022},
+  organization={Springer}
+}
