@@ -1,0 +1,339 @@
+
+
+<style type="text/css">
+	body {
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+		font-weight:300;
+		font-size:18px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 1100px;
+	}
+	
+	h1 {
+		font-size:32px;
+		font-weight:300;
+	}
+	
+	.disclaimerbox {
+		background-color: #eee;		
+		border: 1px solid #eeeeee;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+		padding: 20px;
+	}
+
+	video.header-vid {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	img.header-img {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	img.rounded {
+		border: 1px solid #eeeeee;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	a:link,a:visited
+	{
+		color: #1367a7;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #208799;
+	}
+	
+	td.dl-link {
+		height: 160px;
+		text-align: center;
+		font-size: 22px;
+	}
+	
+	.layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		5px 5px 0 0px #fff, /* The second layer */
+		5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		10px 10px 0 0px #fff, /* The third layer */
+		10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+		15px 15px 0 0px #fff, /* The fourth layer */
+		15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+		20px 20px 0 0px #fff, /* The fifth layer */
+		20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+		25px 25px 0 0px #fff, /* The fifth layer */
+		25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+		margin-left: 10px;
+		margin-right: 45px;
+	}
+
+	.paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		0px 0px 1px 1px rgba(0,0,0,0.35); /* The top layer shadow */
+
+		margin-left: 10px;
+		margin-right: 45px;
+	}
+
+
+	.layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		5px 5px 0 0px #fff, /* The second layer */
+		5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		10px 10px 0 0px #fff, /* The third layer */
+		10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+		margin-top: 5px;
+		margin-left: 10px;
+		margin-right: 30px;
+		margin-bottom: 5px;
+	}
+	
+	.vert-cent {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	
+	hr
+	{
+		border: 0;
+		height: 1px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	}
+</style>
+
+<html>
+<head>
+	<title>TransMatting: Enhancing Transparent Objects Matting with Transformers</title>
+	<meta property="og:image" content="Path to my teaser.png"/> <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
+	<meta property="og:title" content="TransMatting: Enhancing Transparent Objects Matting with Transformers." />
+	<meta property="og:description" content="Paper description." />
+
+	<!-- Get from Google Analytics -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+
+</head>
+
+<body>
+	<br>
+	<center>
+		<span style="font-size:36px">TransMatting: Enhancing Transparent Objects Matting with Transformers</span>
+		<table align=center width=600px>
+			<table align=center width=880px>
+				<tr>
+					<td align=center width=120px>
+						<center>
+							<span style="font-size:24px">Huanqia Cai</a></span>
+						</center>
+					</td>
+					<td align=center width=100px>
+						<center>
+							<span style="font-size:24px">Fanglei Xue</a></span>
+						</center>
+					</td>
+					<td align=center width=100px>
+						<center>
+							<span style="font-size:24px">Lele Xu</a></span>
+						</center>
+					</td>
+					<td align=center width=100px>
+						<center>
+							<span style="font-size:24px">Lili Guo</a></span>
+						</center>
+					</td>
+
+					<td align=center width=100px>
+						<center>
+							<span style="font-size:24px">Zhifeng Li</a></span>
+						</center>
+					</td>
+
+					<td align=center width=100px>
+						<center>
+							<span style="font-size:24px">Wei Liu</a></span>
+						</center>
+					</td>
+
+
+
+				</tr>
+			</table>
+			<table align=center width=800px>
+				<tr>
+					<td align=center width=200px>
+						<center>
+							<span style="font-size:24px"><a href='https://arxiv.org/pdf/2208.03007v3.pdf'>[TransMattingV1]</a></span>
+						</center>
+					</td>
+
+					<td align=center width=400px>
+						<center>
+							<span style="font-size:24px"><a href='https://arxiv.org/pdf/2303.06476.pdf'>[TransMattingV2-extented paper]</a></span>
+						</center>
+					</td>
+
+					<td align=center width=200px>
+						<center>
+							<span style="font-size:24px"><a href='https://github.com/AceCHQ/TransMatting'>[Dataset]</a></span><br>
+						</center>
+					</td>
+				</tr>
+			</table>
+		</table>
+
+		<br>
+	</center>
+
+		<div style="display: flex; justify-content: center; align-items: center;">
+		  <img src="images/picture1_0.gif" style="width: 480px; height: 304px; margin-right: 20px;">
+		  <img src="images/picture1_1.gif" style="width: 480px; height: 304px; margin-left: 20px;">
+		</div>
+
+
+	</center>
+
+      	  <br>
+		  <hr>
+			<div class="disclaimerbox">
+	  		  <!-- <center><h2>How to interpret the results</h2></center> -->
+
+	  		 <span style="color:#646464">
+	  		  	<center><span style="font-size:28px"><b>Abstract</b></span></center>
+
+	  		  	<br>
+
+				Image matting refers to predicting the alpha values of unknown foreground areas from natural images. Prior methods have focused on propagating alpha values from known to unknown regions. However, not all natural images have a specifically known foreground. Images of transparent objects, like glass, smoke, web, etc., have less or no known foreground. In this paper, we propose a Transformer-based network, TransMatting, to model transparent objects with a big receptive field. Specifically, we redesign the trimap as three learnable tri-tokens for introducing advanced semantic features into the self-attention mechanism. A small convolutional network is proposed to utilize the global
+feature and non-background mask to guide the multi-scale feature propagation from encoder to decoder for maintaining the contexture of transparent objects. In addition, we create a high-resolution matting dataset of transparent objects with small known foreground areas. Experiments on several matting benchmarks demonstrate the superiority of our proposed method over the current state-of-the-art methods.
+
+			</span>
+
+			</div>
+  		  <br><br>
+
+	<table align=center width=100px>
+		<tr>
+			<td align=center width=100px>
+				<center>
+					<td><img class="round" style="height:400px" src="images/picture3.png"/></td>
+				</center>
+			</td>
+		</tr>
+	</table>
+
+	<br>
+
+	<p style="text-align:center;">The structure of our TransMatting</p>
+
+	<hr>
+
+	<center><h1>Code of tri-token</h1></center>
+
+	<table align=center width=400px>
+		<tr>
+			<td align=center width=400px>
+				<center>
+					<td><img class="round" style="width:550px" src="images/picture2.png"/></td>
+				</center>
+			</td>
+		</tr>
+	</table>
+
+	<hr>
+	<center><h1>Proposed Dataset: Transparent-460</h1></center>
+        <center>
+                <table align=center width=850px>
+                        <tr>
+                                <td width=260px>
+                                        <center>
+                                                <img class="round" style="width:810px;height:574px" src="images/Composited_image.jpg"/>
+                                        </center>
+                                </td>
+                        </tr>
+                </table>
+        </center>
+
+	<hr>
+
+
+	<center><h1>Paper</h1></center>
+  <div style="display:flex; justify-content:center;">
+        <table style="margin-right:20px;" width=500px>
+
+            <tr>
+                <td><a href=""><img class="layered-paper-big" style="height:175px" src="images/picture3.png"/></a></td>
+                <td><span style="font-size:14pt"><br>
+		                        <b><span style="font-size:20px"><a href='https://arxiv.org/pdf/2303.06476.pdf'>TransMatting: Enhancing Transparent Objects Matting with Transformers.</a></span></b><br>
+
+                    In ECCV, 2022.<br>
+                    <!-- (<a href="./resources/camera-ready.pdf">camera ready</a>)<br> -->
+                    <span style="font-size:4pt"><a href=""><br></a>
+                    </span>
+                </td>
+            </tr>
+        </table>
+
+        <table width=500px>
+            <tr>
+                <td><a href=""><img class="layered-paper-big" style="height:175px" src="images/picture4.jpg"/></a></td>
+                <td><span style="font-size:14pt"><br>
+		    					<b><span style="font-size:20px"><a href='https://arxiv.org/pdf/2208.03007v3.pdf'>TransMatting: Tri-token Equipped Transformer Model for Image Matting.</a></span></b>
+
+                   <br>
+                    <!-- (<a href="./resources/camera-ready.pdf">camera ready</a>)<br> -->
+                    <span style="font-size:4pt"><a href=""><br></a>
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+	<table align=center width=600px>
+		<tr>
+			<td style="float:right;"><span style="font-size:14pt"><center>
+				<a href="images/bibtex_2.txt">[Bibtex]</a>
+			</center></td>
+		</tr>
+	</table>
+
+	<table align=center width=600px>
+		<tr>
+			<td style="float:left;"><span style="font-size:14pt"><center>
+				<a href="images/bibtex_1.txt">[Bibtex]</a>
+			</center></td>
+		</tr>
+	</table>
+
+	<hr>
+	<br>
+
+		<table align=center width=900px>
+		<tr>
+			<td width=400px>
+				<left>
+					<center><h1>Acknowledgements</h1></center>
+					The work was supported by the National Natural Science Foundation of Chinese under Grant 61901454.
+				</left>
+			</td>
+		</tr>
+	</table>
+
+
+
+
+<br>
+</body>
+</html>
