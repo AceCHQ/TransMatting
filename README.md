@@ -14,9 +14,11 @@ Quantitative Results on Composition-1k
 
 
 # Transparent-460
-Our dataset Transparent-460 is now open to the public. If you want to use it for research rather than commercial activity, please follow the following step to get the dataset. 
+Our dataset Transparent-460 is now open to the public. If you want to use it for research rather than commercial activity, you can directly download it using the following link: [Transparent-460](https://drive.google.com/file/d/1N0sSrnAwWfFHgxEA3Rfrm6MMeauOkJPG/view?usp=sharing)
 
-Send an email to Huanqia Cai (caihuanqia19@mails.ucas.ac.cn) to get the download link to the database. Your email MUST be sent from a valid university or research institute account and MUST include the following text:
+Please note that you are still required to send an email to Huanqia Cai (caihuanqia19@mails.ucas.ac.cn) to inform us of your usage. 
+Your email MUST be sent from a valid university or research institute account and MUST include the following text:
+
 
 ```
 Subject: Application to download the Transparent-460 Database          
