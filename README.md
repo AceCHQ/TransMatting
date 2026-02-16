@@ -8,31 +8,31 @@ The extended paper [TransMatting: Tri-token Equipped Transformer Model for Image
 ## Results
 
 Quantitative Results on Composition-1k
-| Model      | SAD   | MSE | Grad | Conn  | Results |
+| Model      | SAD   | MSE | Grad | Conn  | Results Download |
 | ---------- | ----- | --- | ---- | ----- | ----------- |
 | TransMattingV1 | 24.96 | 4.58 | 9.72 | 20.16 |[GoogleDrive](https://drive.google.com/drive/folders/1ippCr0rxvh6v4OFXRPWgP4ANojylhn_6)|
 
 
-# Transparent-460
-Our dataset Transparent-460 is now open to the public. If you want to use it for research rather than commercial activity, you can directly download it using the following link: [Transparent-460](https://drive.google.com/file/d/1N0sSrnAwWfFHgxEA3Rfrm6MMeauOkJPG/view?usp=sharing)
+# Transparent-460 Dataset
 
-Please note that you are still required to send an email to Huanqia Cai (caihuanqia19@mails.ucas.ac.cn) to inform us of your usage. 
-Your email MUST be sent from a valid university or research institute account and MUST include the following text:
+The **Transparent-460** dataset is now open to the public. To support the community, we have simplified the access process for researchers. Please follow the guidelines below based on your intended use:
 
+### 🎓 For Academic Research (Direct Download)
+If you use this dataset for non-commercial research, you can download it directly. **By downloading, you agree to the [Terms & Conditions](#terms--conditions) and MUST cite our paper in your work.**
 
-```
-Subject: Application to download the Transparent-460 Database          
-Name: <Your first and last name>
-Affiliation: <University or institute where you work>
-Department: <Your department>
-Position: <Your job title>
-Email: <Must be the email at the above mentioned institution>
+* **Download Link:** [Transparent-460 (Google Drive)](https://drive.google.com/file/d/1N0sSrnAwWfFHgxEA3Rfrm6MMeauOkJPG/view?usp=sharing)
+* **Requirement:** Please include the [Citation](#citation) provided below in any publication or project using this data.
 
-I have read and agree to the terms and conditions specified in the Transparent-460 database webpage. 
-This database will only be used for research purposes. 
-I will not make any part of this database available to a third party. 
-I'll not sell any part of this database or make any profit from its use.
-```
+---
+
+### 💼 For Commercial Use (Email Required)
+If you intend to use this dataset for any commercial activity, you **MUST** contact the authors to discuss licensing and permission. 
+
+* **Contact:** Huanqia Cai ([caihuanqia19@mails.ucas.ac.cn](mailto:caihuanqia19@mails.ucas.ac.cn))
+* Please use a valid corporate/institutional email and specify your intended use case.
+
+---
+
 
 ## Terms & Conditions
 The Transparent-460 database is available for non-commercial research purposes only.
